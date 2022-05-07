@@ -3,6 +3,7 @@ import { Button, Form, Input, Message } from "semantic-ui-react";
 import Layout from "../../components/Layout";
 import factory from '../../ethereum/factory'
 import web3 from "../../ethereum/web3";
+import { Router} from '../../routes';
 
 class CampaignNew extends Component{
 
@@ -25,6 +26,8 @@ class CampaignNew extends Component{
                 gas: 1000000,
                 from: accounts[0]
             });
+
+            Router.pushRoute('/');
         
         }catch (err)
         {
