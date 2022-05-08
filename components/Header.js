@@ -9,7 +9,7 @@ export default () =>{
 
         <Menu style={{marginTop: '10px'}}>
             <Link route="/">
-                <a className="item">CrownCoin</a>
+                <a className="item">CrowdCoin</a>
             </Link>
                 <Menu.Menu position="right">
                 <Link route="/campaigns/new">
