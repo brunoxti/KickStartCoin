@@ -19,8 +19,6 @@ static async getInitialProps(props){
         })
     );
 
-    console.log(requests);
-
     return {address, requests, requestCount, approversCount};
 }
 
@@ -58,8 +56,6 @@ static async getInitialProps(props){
                         <HeaderCell>Approval Count</HeaderCell>
                         <HeaderCell>Approve</HeaderCell>
                         <HeaderCell>Finalize</HeaderCell>
-
-                        
                     </Row>
                 </Header>
                 <Body>
