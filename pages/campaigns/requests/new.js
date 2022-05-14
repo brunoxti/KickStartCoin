@@ -1,10 +1,9 @@
-import { Router } from "next/router";
 import React, {Component} from "react";
 import { Button, Form, Input, Message } from "semantic-ui-react";
 import Layout from "../../../components/Layout";
 import Campaign from "../../../ethereum/campaign";
 import web3 from "../../../ethereum/web3";
-import{Link} from '../../../routes';
+import{Link, Router} from '../../../routes';
 
 class RequestNew extends Component{
 
@@ -39,11 +38,11 @@ onSubmit = async event =>{
             recipient
             ).send({ from: accounts[0]});
 
-            Router.pushRoute(`/campaign/${this.props.address}/requests`);
+            Router.pushRoute(`/campaigns/${this.props.address}/requests`);
             this.setState({loading: false});
 
     }catch(err){
-        console.log(err)
+        console.log(err.message)
         this.setState({loading: false, errorMessage: err.message})
 
     }
