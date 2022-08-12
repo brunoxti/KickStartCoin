@@ -7,7 +7,7 @@ Using the Rinkeby network, smart contract with Solidity and front-end with nextj
 
 ## Getting Started
 
-Set you account provider a new HDWalletProvider with address wallet and rinkeby address on deploy.js file.
+Set you account provider a new HDWalletProvider with address wallet and rinkeby address at deploy.js file.
 
 Run: 
 ```bash
