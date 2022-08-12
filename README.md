@@ -7,7 +7,18 @@ Using the Rinkeby network, smart contract with Solidity and front-end with nextj
 
 ## Getting Started
 
-First, run the development server:
+Set you account provider a new HDWalletProvider with address wallet and rinkeby address on deploy.js file.
+
+Run: 
+```bash
+npm install
+#and
+node ethereum/deploy.js
+
+```
+Copy the address where the contract was deployed displayed in the console and put it in the .env file in the project root.
+
+And run the development server:
 
 ```bash
 npm run dev
